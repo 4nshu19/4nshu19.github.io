@@ -1,4 +1,4 @@
-function createGraph(data,x){
+function createGraph(data){
 
   // for(var i=1; i< data.length-1; i++)
   //   {console.log(data[i]);}
@@ -7,7 +7,7 @@ function createGraph(data,x){
   var chart = c3.generate({
       data: {
           columns: [
-              x  //s8
+              s8
           ]
       },
       axis: {

@@ -10,8 +10,8 @@ function parseData() {
       complete: function(results) {
   		console.log("Finished:", results.data);
       createArray(results.data);
-      createGraph(results.data, s8);
-
+      createGraph(results.data);
+      
   	}
   });
 }
@@ -64,11 +64,34 @@ function createArray(data)
 
 
 new Vue({
- el: '#btn1',
+ el: '#btn',
  methods: {
-   graph()
-   {
-   parseData();}
+   s2008()
+   { parseData(s8);},
+
+   s2009()
+   { parseData(s8);},
+
+   s2010()
+   { parseData(s8);},
+
+   s2011()
+   { parseData(s8);},
+
+   s2012()
+   { parseData(s8);},
+
+   s2013()
+   { parseData(s8);},
+
+   s2014()
+   { parseData(s8);},
+
+   s2015()
+   { parseData(s8);},
+
+   s2016()
+   { parseData(s8);}
  }
 
 });
