@@ -2,7 +2,7 @@
 var s8=['Win By Runs'],s9=['Win By Runs'],s10=['Win By Runs'],s11=['Win By Runs'],s12=['Win By Runs'],s13=['Win By Runs'],s14=['Win By Runs'],s15=['Win By Runs'],s16=['Win By Runs'];
 var s8data=[],s9data=[],s10data=[],s11data=[],s12data=[],s13data=[],s14data=[],s15data=[],s16data=[];
 
-function parseData() {
+function parseData(x,y) {
 
 
   Papa.parse("../data/matches.csv", {
@@ -10,8 +10,8 @@ function parseData() {
       complete: function(results) {
   		console.log("Finished:", results.data);
       createArray(results.data);
-      createGraph(results.data);
-      
+      createGraph(results.data,x,y);
+
   	}
   });
 }
@@ -67,31 +67,31 @@ new Vue({
  el: '#btn',
  methods: {
    s2008()
-   { parseData(s8);},
+   { parseData(s8,s8data);},
 
    s2009()
-   { parseData(s8);},
+   { parseData(s9,s9data);},
 
    s2010()
-   { parseData(s8);},
+   { parseData(s10,s10data);},
 
    s2011()
-   { parseData(s8);},
+   { parseData(s11,s11data);},
 
    s2012()
-   { parseData(s8);},
+   { parseData(s12,s12data);},
 
    s2013()
-   { parseData(s8);},
+   { parseData(s13,s13data);},
 
    s2014()
-   { parseData(s8);},
+   { parseData(s14,s14data);},
 
    s2015()
-   { parseData(s8);},
+   { parseData(s15,s15data);},
 
    s2016()
-   { parseData(s8);}
+   { parseData(s16,s16data);}
  }
 
 });

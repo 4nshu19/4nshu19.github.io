@@ -1,4 +1,4 @@
-function createGraph(data){
+function createGraph(data,x,y){
 
   // for(var i=1; i< data.length-1; i++)
   //   {console.log(data[i]);}
@@ -7,13 +7,13 @@ function createGraph(data){
   var chart = c3.generate({
       data: {
           columns: [
-              s8
+              x //s8
           ]
       },
       axis: {
           x: {
               type: 'category',
-              categories: s8data,
+              categories: y,
               show: false
           }
       }
@@ -32,8 +32,8 @@ var chart = c3.generate({
   bindto: '#chart2',
   data: {
       columns: [
-          ['Average win by runs', avg_byrun],
-          ['Average win by wickets', avg_bywic]
+          ['Average win by runs (overall)', avg_byrun],
+          ['Average win by wickets (overall)', avg_bywic]
       ],
       type: 'bar'
   },
