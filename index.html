@@ -8,8 +8,12 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
          <!-- <link rel='stylesheet' href='./static/materialize.min.css'> -->
          <link rel="stylesheet" href="./files/c3.min.css" type="text/css">
-         <script type="text/javascript" src = "./files/d3.min.js"> </script>
-         <script type="text/javascript" src = "./files/c3.min.js"></script>
+         <script type="text/javascript" src = "./files/d3.js"> </script>
+         <!-- <script type="text/javascript" src = "./files/d3.min.js"> </script> -->
+
+         <script type="text/javascript" src = "./files/c3.js"></script>
+         <script type="text/javascript" src = "./files/c3.min.js"> </script>
+
          <script type="text/javascript" src = "./files/papaparse.js"></script>
 
          </script>
@@ -18,7 +22,7 @@
     <body>
       <nav>
           <div class="nav-wrapper black">
-            <a href="#" class="brand-logo center" id="logo">Social Cops</a>
+            <a href="#" class="brand-logo center" id="logo">IPL Data Analysis</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="sass.html">Abcd</a></li>
               <li><a href="badges.html">Efgh</a></li>
@@ -28,6 +32,7 @@
         </nav>
     <br><br>
    <div class="button center">
+     <span id = 'season'>   Season </span>
      <a class="waves-effect waves-light btn">2008</a>
      <a class="waves-effect waves-light btn">2009</a>
      <a class="waves-effect waves-light btn">2010</a>
@@ -38,10 +43,11 @@
      <a class="waves-effect waves-light btn">2015</a>
      <a class="waves-effect waves-light btn">2016</a>
   </div>
-  <br>
-  <div class="chart">
+  <br><br>
+  <div id="chart" class = "center"> </div>
+  <br><br><br>
+  <div id="chart2" class = "container"> </div>
 
-  </div>
 <!-- <script src="https://unpkg.com/vue@2.3.4"></script> -->
 <script type="text/javascript" src= "./files/myscript.js"> </script>
 

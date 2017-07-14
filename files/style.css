@@ -1,0 +1,15 @@
+#season {
+  font-size: 24px;
+}
+
+#chart {
+
+  max-width: 90%;
+  /*align-content: center;*/
+  padding-left: 04%;
+}
+
+#chart2 {
+
+  max-width: 30%;
+}
