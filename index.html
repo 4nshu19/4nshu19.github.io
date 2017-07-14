@@ -33,7 +33,7 @@
     <br><br>
    <div class="button center">
      <span id = 'season'>   Season </span>
-     <a class="waves-effect waves-light btn">2008</a>
+     <a class="waves-effect waves-light btn" v-on:click="graph" id="btn1">2008</a>
      <a class="waves-effect waves-light btn">2009</a>
      <a class="waves-effect waves-light btn">2010</a>
      <a class="waves-effect waves-light btn">2011</a>
@@ -48,7 +48,8 @@
   <br><br><br>
   <div id="chart2" class = "container"> </div>
 
-<!-- <script src="https://unpkg.com/vue@2.3.4"></script> -->
+<script src="https://unpkg.com/vue@2.3.4"></script>
+<script type="text/javascript" src= "./files/creategraph.js"> </script>
 <script type="text/javascript" src= "./files/myscript.js"> </script>
 
 </script>
