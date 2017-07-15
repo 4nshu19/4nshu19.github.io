@@ -3,7 +3,7 @@ function createGraph(data,x,y){
   // for(var i=1; i< data.length-1; i++)
   //   {console.log(data[i]);}
 
-
+//First Chart
   var chart = c3.generate({
       data: {
           columns: [
@@ -19,7 +19,7 @@ function createGraph(data,x,y){
       }
   });
 
-
+//Second Chart
 var avg_byrun=0, avg_bywic=0;
 for(var i=1; i< data.length - 1 ; i++)
      {avg_byrun = avg_byrun + parseInt(data[i][11]);
@@ -45,5 +45,30 @@ var chart = c3.generate({
       //width: 100 // this makes bar width 100px
   }
 });
+
+
+
+//Third Chart
+var tosswin = 0;
+for(var i=1; i< data.length - 1 ; i++)
+     if(data[i][6] == data[i][10])
+         tosswin ++;
+  tosswin /= (data.length - 1) ;
+  tosswin = tosswin* 100;
+  console.log(tosswin);
+
+var chart = c3.generate({
+    bindto: '#chart3',
+    data: {
+        // iris data from R
+        columns: [
+            ['Percentage of times toss winner won the match', tosswin],
+            ['Percentage of times toss winner lost the match', 100 - tosswin],
+        ],
+        type : 'pie',
+
+    }
+});
+
 
 }
