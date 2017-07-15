@@ -55,9 +55,8 @@ for(var i=1; i< data.length - 1 ; i++)
          tosswin ++;
   tosswin /= (data.length - 1) ;
   tosswin = tosswin* 100;
-  console.log(tosswin);
 
-var chart = c3.generate({
+  var chart = c3.generate({
     bindto: '#chart3',
     data: {
         // iris data from R
@@ -69,6 +68,29 @@ var chart = c3.generate({
 
     }
 });
+
+//fourth chart
+var batwin=0,bowlwin =0;
+for(var i=1; i< data.length - 1 ; i++)
+    { if(data[i][7] == 'bat' && data[i][6] == data[i][10])
+         batwin++;
+      if(data[i][7] == 'field' && data[i][6] == data[i][10])
+          bowlwin++; }
+ var per1 = (batwin / (batwin+bowlwin)) *100;
+ console.log(per1);
+
+      var chart = c3.generate({
+          bindto: '#chart4',
+          data: {
+              // iris data from R
+              columns: [
+                  ['Percentage of times choosing to bat won the match', per1],
+                  ['Percentage of times choosing to field won the match', 100-per1],
+                  ],
+                  type : 'pie',
+
+              }
+      });
 
 
 }
