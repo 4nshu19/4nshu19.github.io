@@ -95,3 +95,8 @@ new Vue({
  }
 
 });
+
+function autoload()
+{
+   parseData(s8,s8data);
+}

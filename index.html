@@ -15,10 +15,10 @@
          <script type="text/javascript" src = "./files/c3.min.js"> </script>
          <script type="text/javascript" src = "./files/papaparse.js"></script>
 
-         </script>
+
     </head>
 
-  <body>
+  <body >
       <nav>
           <div class="nav-wrapper black">
             <a href="#" class="brand-logo center" id="logo">IPL Data Analysis</a>
@@ -26,7 +26,7 @@
       </nav>
       <br><br>
       <div class="button center" id = "btn">
-        <span id = "season">   Season </span>
+        <span id = "season">  Select the Season </span>
         <a class="waves-effect waves-light btn" v-on:click="s2008">2008</a>
         <a class="waves-effect waves-light btn" v-on:click="s2009">2009</a>
         <a class="waves-effect waves-light btn" v-on:click="s2010">2010</a>
@@ -53,6 +53,9 @@
   <script src="https://unpkg.com/vue@2.3.4"></script>
   <script type="text/javascript" src= "./files/creategraph.js"> </script>
   <script type="text/javascript" src= "./files/myscript.js"> </script>
+  <script type="text/javascript">
+    window.onload = autoload;
+  </script>
 
   </body>
 </html>
