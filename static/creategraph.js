@@ -61,8 +61,8 @@ for(var i=1; i< data.length - 1 ; i++)
     data: {
         // iris data from R
         columns: [
-            ['Percentage of times toss winner won the match', tosswin],
-            ['Percentage of times toss winner lost the match', 100 - tosswin],
+            ['Percentage of times toss winning team won the match', tosswin],
+            ['Percentage of times toss winning team lost the match', 100 - tosswin],
         ],
         type : 'pie',
 
