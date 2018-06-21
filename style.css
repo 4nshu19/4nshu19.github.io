@@ -1,0 +1,39 @@
+body{
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Rajdhani';
+  font-size: 60px;
+  background-color: #111;
+}
+
+.container {
+  position: relative;
+}
+
+.intro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  color: white;
+}
+
+a:link, a:visited{
+  color: white;
+
+}
+.intro::selection {
+  background-color: #212121;
+  color:white;
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 26px;
+  }
+  .intro {
+    width: 70%;
+  }
+}
